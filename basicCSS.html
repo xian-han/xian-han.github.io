@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>基礎CSS</title>
+        <style type="text/css">
+            .text{font-size:30px}
+            .CSSselector{
+                border:2px solid brown;
+                font-size:30px;
+                font-weight:bold;
+                margin-top:10px;
+                margin-bottom:10px;
+                padding:10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="margin-bottom:10px">
+            <table border="1" cellpadding="10">
+                <tr>
+                    <td>
+                        <a href="mypage.html">我的首頁</a>
+                    </td>
+                    <td>
+                        <a href="日本語.html">日本語の勉強ページ</a>
+                    </td>
+                    <td>
+                        <a href="html整理.html">html基本整理</a>
+                    </td>
+                    <td>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div style="border:2px solid gray">
+            <div><h2>標籤<u>div</u>,在網頁中代表一個區塊</h2></div>
+            <div class="text">在標籤div中的屬性<u>style</u>中,可以使用CSS的語法</div>
+            <div class="text">CSS語法為設定屬性<u>style</u>="<u>元素名稱:指定值</u>",如果有複數元素則需要在指定值後面加上分號;</div>
+            <div class="text">元素名稱<span style="font-weight:bold;font-size:35px">font-weight</span>用來"區分字體是普通體還是粗體字",指定值<b>bold</b>為粗體字</div>
+            <div class="text">元素名稱<span style="font-size:35px;font-weight:bold;">font-size</span>用來"更改字體大小"</div>
+            <div class="text">元素名稱
+                <span style="font-weight:bold;color:forestgreen">c</span>
+                <span style="font-weight:bold;color:blueviolet">o</span>
+                <span style="font-weight:bold;color:darkgoldenrod">l</span>
+                <span style="font-weight:bold;color:tomato">o</span>
+                <span style="font-weight:bold;color:violet">r</span>
+                更改"文字顏色"
+            </div>
+            <div class="text">標籤<span style="font-size:35px;font-weight:bold;color:red;">div</span>會自動做換行,如果不想要換行使用標籤<span style="font-size:35px;font-weight:bold;color:blue;">span</span></div>
+        </div>
+        <div style="margin-top:10px;margin-bottom:10px;border:2px solid gray">
+            <div style="font-weight:bold;font-size:30px;">CSS的<span style="font-weight:bold;font-size:35px;color:rebeccapurple;">BOX MODEL</span>概念:<span style="color:gray">"每個標籤都形成自己的BOX區塊"</span></div>
+            <div style="font-weight:bold;font-size:30px;">使用元素名稱<span style="border:2px solid blue">border</span>:<span style="border:2px dashed purple;color:red">像素 樣式 顏色</span>形成BOX區塊的邊框</div>
+            <div style="font-weight:bold;font-size:30px;margin:20px;border:5px solid red">使用元素名稱<span style="border:2px solid blue">margin</span>:"控制各個BOX區塊邊框間距"</div>
+            <div style="font-weight:bold;font-size:30px;border:2px solid purple;padding:25px;">使用元素名稱<span style="color:cornflowerblue">padding</span>:"控制BOX區塊邊框與文字間距"</div>
+        </div>
+        <div style="border:2px solid gray;margin-top:10px;margin-bottom:10px;">
+            <div style="font-size:30px;font-weight:bold;color:blue;">調整標籤的高度、寬度</div>
+            <div style="font-size:30px;font-weight:bold;border:2px solid green;width:500px;">
+                使用元素名稱<span style="border:2px dashed green;color:orange">width</span>:<span style="border:1px dashed black">像素</span><br/>我是width:500px
+            </div>
+            <div style="font-size:30px;font-weight:bold;border:2px solid blue;height:100px;">
+                使用元素名稱<span style="border:2px dashed purple;color:grown">height</span>:<span style="border:2px dashed yellow">像素</span><br/>我是height:100px
+            </div>
+            <div style="font-size:30px;font-weight:bold;">只有在能夠分行的標籤內,例如:"div",才能使用width,height去調整標籤高度、寬度</div>
+        </div>
+        <div class="CSSselector">
+            <div>
+                <span style="color:cornflowerblue">CSS選擇器簡介
+            </span></div>
+            <div>
+                透過在標籤head中加入標籤<span style="color:darkgreen;border:2px dashed red">style</span>,使用屬性<span style="color:darkred;border:2px dashed darkgreen">type="text/css"</span>,就可以在裡面寫CSS語法
+                <div>
+                    <span style="color:dodgerblue">.類別名稱{CSS語法}<br/></span>
+                    範例:<br/>
+                    .text{font-size:30px;}<br/>
+                    .CSS{<br/>
+                    border:1px solid purple;<br/>
+                    margin:10px;
+                    <br/>}
+                </div>
+                <div>要套用CSS類別,就在該標籤中使用屬性<span style="border:2px dashed red;color:chocolate">class="類別名稱"</span></div>
+            </div>
+        </div>
+        <div style="font-size:30px;font-weight:bold;border:2px solid #888888;margin-top:10px;margin-bottom:10px;padding:10px;">
+            絕對位置v.s相對位置
+        </div>
+    </body>
+</html>

@@ -13,6 +13,28 @@
                 margin-bottom:10px;
                 padding:10px;
             }
+            .abso{
+                position:absolute;bottom:-680px;left:50px;
+                border:2px solid gray;
+                font-size:30px;
+                font-weight:bold;
+                margin-top:10px;
+                margin-bottom:10px;
+                padding:10px;
+                background-color:greenyellow;
+            }
+            .rela{
+                position:relative;left:50px;
+                width:500px;
+                border:2px solid blue;
+                font-size:30px;
+                font-weight:bold;
+                margin-top:10px;
+                margin-bottom:10px;
+                padding:10px;
+                background-color:mediumaquamarine;
+                
+            }
         </style>
     </head>
     <body>
@@ -84,7 +106,15 @@
             </div>
         </div>
         <div style="font-size:30px;font-weight:bold;border:2px solid #888888;margin-top:10px;margin-bottom:10px;padding:10px;">
-            絕對位置v.s相對位置
+            絕對定位v.s相對定位<br/>
+            使用<span style="color:cadetblue">position</span>:<span style="color:olivedrab">absolute</span>/<span style="color:orangered">relative</span><br/>
+            <span style="color:coral">相對定位</span>較常用於小範圍的位移
+            <div class="rela">
+                我是相對定位<u>left</u>:50px;<u></u>
+            </div>
+            <div class="abso">
+                我是絕對定位<u>top</u>:1500px;<u>left</u>:50px;
+            </div>
         </div>
     </body>
 </html>

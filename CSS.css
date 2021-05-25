@@ -1,0 +1,33 @@
+.text{font-size:30px}
+.CSSselector{
+	border:2px solid brown;
+	font-size:30px;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+}
+.abso{
+	position:absolute;bottom:-720px;left:50px;
+	border:2px solid gray;
+	font-size:30px;
+	font-weight:bold;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	background-color:greenyellow;
+}
+.rela{
+	position:relative;left:50px;
+	width:500px;
+	border:2px solid blue;
+	font-size:30px;
+	font-weight:bold;
+	margin-top:10px;
+	margin-botoom:10px;
+	padding:10px;
+	background-color:mediumaquamarine;
+}
+u{
+	color:blue;
+}

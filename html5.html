@@ -3,23 +3,45 @@
     <head>
         <meta charset="utf-8">
         <title>html整理</title> 
+        <style>
+            ul{
+                list-style-type:none;
+                color:white;
+                background-color:darkgray;
+                overflow:hidden;
+                padding:5px;
+            }
+            li a{
+                font-family:"微軟正黑體";
+                font-weight:bold;
+                text-decoration:none;
+                display:block;
+                padding:16px;
+                float:left;
+            }
+            a:visited{
+                color:yellow;
+            }
+            a:link{
+                color:white;
+            }
+            a:hover{
+                background-color:silver;
+            }
+        </style>
     </head>
     <body>  
-        <table border="1" cellpadding="10">
-            <tr>
-                <td>
+        <ul>
+                <li id="table">
                     <a href="mypage.html">我的首頁</a>
-                </td>
-                <td>
+                </li>
+                <li id="table">
                     <a href="nihongo.html">日本語の勉強ページ</a>
-                </td>
-                <td>
+                </li>
+                <li id="table">
                     <a href="basicCSS.html">基礎CSS</a>
-                </td>
-                <td>
-                </td>
-            </tr>
-        </table>
+                </li>    
+        </ul>
         <h1><u>HTML</u>是由標籤所組成的</h1>
         <ul>
             <li>
@@ -48,7 +70,27 @@
         <h2>
             <ul>
                 <li>
-                    標籤<u>ul</u>為列表
+                    標籤<u>ul</u>為有序列表,使用<u>style="list-style-type:種類;"</u>可以指定分項的圖示。
+                    <ul style="list-style-type:disc;">
+                        <li>
+                            我是預設的圖示(黑色圓點)!
+                        </li>
+                    </ul>
+                    <ul style="list-style-type:square;">
+                        <li>
+                            我是黑色方塊!
+                        </li>
+                    </ul>
+                    <ul style="list-style-type:circle">
+                        <li>
+                            我是黑邊內白的圓形!
+                        </li>
+                    </ul>
+                    <ul style="list-style-type:none">
+                        <li>
+                            沒有圖形!
+                        </li>
+                    </ul>
                 </li>
                 <li>
                     其子標籤<u>li</u>標記出此列表有哪些項目    
